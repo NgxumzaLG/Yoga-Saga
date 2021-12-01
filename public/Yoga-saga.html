@@ -9,6 +9,8 @@
 	<link rel="stylesheet" href="style.css">
 	<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.3.1/dist/tf.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/@teachablemachine/pose@0.8/dist/teachablemachine-pose.min.js"></script>
+	<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto+Condensed:wght@300&display=swap"
+        rel="stylesheet">
 	<script type="text/javascript">
 		// More API functions here:
 		// https://github.com/googlecreativelab/teachablemachine-community/tree/master/libraries/pose
@@ -83,19 +85,22 @@
 </head>
 <body>
 	
-	<section class="header py-5 bg-light">
+	<section class="header py-2 bg-light">
         <div class="container">
             <div class="row g-0">
                 <div class="col-lg-5">
                     <img src="./images/Yoga.jpg" class="img-fluid" alt="">
 
                 </div>
-                <div class="col-lg-7 text-center py-5">
-                    <h1 class="animate__animated animate__heartBeat animate__infinite">YOGA SAGA</h1>                    
-                        <div class=" py-2 ">                            
-							<div>Teachable Machine Pose Model</div>
-							<button class="btn btn-success" type="button" onclick="init()">Start</button>
-							<div><canvas id="canvas" style="height: 300px; width: 500px;"></canvas></div>
+                <div class="col-lg-7 text-center py-4 heading">
+                    <h1 class="animate__animated animate__heartBeat animate__infinite">YOGA SAGA</h1> 
+				
+                        <div class=" py-2 ">  
+							<div class="d-flex m-player">
+								<h4 class="m-3">Player: <strong>Ishmael</strong></h4> 
+								<button class="btn btn1 m-3" type="button" onclick="init()">Start</button>
+							</div>                          
+							<div><canvas id="canvas" style="height: 350px; width: 500px;"></canvas></div>
 							<div id="label-container"></div>
                         </div>            
 

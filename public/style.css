@@ -25,7 +25,7 @@ table, th, td {
     width: 250%;
 
 }
-.header h1{
+.header h1, .heading h1{
     font-size: 4rem;
     font-weight: 700;
     font-family: 'Pacifico', cursive;
@@ -59,4 +59,9 @@ table, th, td {
     background-color: blue;
     transition: 0.5s;
 }
-/*********************************************************************************************/  
+/*********************************************************************************************/ 
+
+.m-player {
+    justify-content: center;
+    align-items: center;
+}
