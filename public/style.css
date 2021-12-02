@@ -86,6 +86,13 @@ body {
     justify-content: center;
     align-items: center;
 }
+
+
+.animate__animated {
+    
+    animation: heartBeat; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 10s; /* don't forget to set a duration! */
+  }
 /************************** CAROUSEL **************************************************/
 
 /* Slideshow container */
