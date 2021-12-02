@@ -1,17 +1,20 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
 table, th, td {
     border: 1px solid black;
     border-collapse: collapse;
-  }
+}
+
 /**********************************HOME PAGE STYLING*****************************************************/
 
-  *{
+*{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
+
 .row{
     background: white;
     border-radius: 30px;
@@ -31,6 +34,7 @@ table, th, td {
     font-family: 'Pacifico', cursive;
     color: blue;
 }
+
 .inp{
     height: 50px;
     text-align: center;
@@ -41,9 +45,8 @@ table, th, td {
     box-shadow: -1px 1px 30px -11px rgba(0,0,0,0.75);
     -webkit-box-shadow: -1px 1px 30px -11px rgba(0,0,0,0.75);
     -moz-box-shadow: -1px 1px 30px -11px rgba(0,0,0,0.75);
-
-
 }
+
 .btn1 {
     height: 50px;
     width: 40%;
@@ -59,7 +62,7 @@ table, th, td {
 .btn-start {
     border-radius: 20px;
     height: 50px;
-    width: 80px;
+    width: 100px;
     font-weight: 600;
     background-color: magenta;
     color: white;
@@ -69,6 +72,7 @@ table, th, td {
     background-color: blue;
     transition: 0.5s;
 }
+
 /*********************************************************************************************/ 
 
 .m-player {
@@ -124,6 +128,10 @@ table, th, td {
       /* background-color: blueviolet; */
   }
 
-  .detect {
+.detect {
     width: 80%;
-  }
+}
+
+.pose-text {
+    font-size: 22px;
+}
