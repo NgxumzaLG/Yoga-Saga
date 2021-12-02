@@ -15,8 +15,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto+Condensed:wght@300&display=swap"
         rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.4.2/handlebars.js"
+		integrity="sha256-hSzapznWRy/aOZkctlN03an9DxCLlN8ZCQS0lxntiHg=" crossorigin="anonymous"></script>
 
     <title>YOGA SAGA</title>
+    <script type="text/x-template" class="yogaTemplate">
+
+	</script>
 </head>
 
 <body>
@@ -35,12 +40,21 @@
                     <form>
                         <div class="form-row  py-2 pt-5">
                             <div class="offset-1 col-lg-10">
-                                <input type="text" class="inp px-3" placeholder="PlayerName">
+                                <input type="text" class="inp px-3 playerName" placeholder="Enter player name">
 
                             </div>
                             <div class="form-row py-3">
                                 <div class="offset-1 col-lg-10">
-                                    <button class="btn1">Submit</button>    
+                                    <button class="btn1 submitBtn" type="button">Submit</button></a>
+                                       
+                                </div>
+
+                            </div>
+                            <div class="form-row py-3">
+                                <div class="offset-1 col-lg-10">
+                                    <h4><strong>Leaderboard:</strong></h4>
+                                    <button onclick="location.href = './Yoga-score.html'" type="button" class="btn1">View</button>
+                                       
                                 </div>
 
                             </div>
@@ -73,6 +87,21 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
+
+        <script src="./yoga_sagaFactoryFunction.js"></script>
+        <!-- <script src="./yoga.js"></script> -->
+        
+        <script>
+            var yogaSaga = YogaSaga();
+
+            var submitBtn = document.querySelector('.submitBtn');
+
+            submitBtn.addEventListener('click', function() {
+                location.href = './Yoga-saga.html'
+
+            });
+
+        </script>
 
 
 </body>

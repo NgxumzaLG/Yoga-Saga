@@ -1,4 +1,4 @@
-function Yoga_saga() {
+function YogaSaga() {
     var player = ''
     function setPlayerName(name){
         player = name;
