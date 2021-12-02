@@ -1,5 +1,6 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
 }
 /* table, th, td {
     border: 1px solid black;
@@ -10,7 +11,12 @@ body {
   *{
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
+}
+
+.container {
+    height: fit-content;
+    /* overflow: auto; */
 }
 .row{
     background: white;
