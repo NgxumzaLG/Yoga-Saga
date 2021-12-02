@@ -1,15 +1,15 @@
 var poseList = [
     {
         image:"./images/chairPose.jpg",
-        name: 'chair pose'
+        name: 'Chair pose'
     },
     {
-        image:"./images/disko.jpg",
-        name:'disko pose'
+        image:"../images/disco-pose.jpg",
+        name:'Disco pose'
     },
     {
-        image:"./images/bendingTree.png",
-        name:'bending tree'
+        image:"../images/tree-pose.jpg",
+        name:'Bending tree Pose'
     },
     {
         image:"./images/MJ.jpg",
@@ -17,19 +17,19 @@ var poseList = [
 
     },
     {
-        image:"./images/triangleForward.jpg",
-        name:'triangle forward'
+        image:"../images/Triangula-Pose.jpg",
+        name:'Trianglar Forward Pose'
     },
     {
-        image:"./images/warrior_pose.jpg",
-        name:'warrior pose'
+        image:"../images/Warrior-pose.jpg",
+        name:'Warrior Pose'
     },
     {
-        image:"./images/yogaTreePose.jpg",
-        name: 'tree pose'
+        image:"../images/yoga-tree.jpg",
+        name: 'Yoga tree Pose'
     },
     {
-        image:"./images/stand.jpeg",
-        name: 'tree pose'
+        image:"../images/stand-Pose.jpg",
+        name: 'Standing Pose'
     }
 ];

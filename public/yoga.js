@@ -2,10 +2,19 @@
 var card = document.querySelector(".card");
 var theButton = document.querySelector('.btn');
 var myButton = document.querySelector('.myButton');
+var playerName = document.querySelector('.playerName');
+var submitBtn = document.querySelector('.submitBtn');
 
-// theButton.addEventListener('click', function() {
+var yogaSaga = YogaSaga();
+
+//  submitBtn.addEventListener('click', function() {
+//    yogaSaga.setPlayerName(playerName.value)
+//    console.log(yogaSaga.getPlayerName());
+//    location.href = './Yoga-saga.html'
+
+   
   
-// })
+// });
 
 
 // Compile Templates
@@ -14,7 +23,13 @@ var useYogaTemplate = Handlebars.compile(yogaTempSource);
 
 var yogaList = [{src: './images/tree-pose.jpg', name: 'Bending Tree Pose'}, 
               {src: './images/michael-jackson-pose.jpg', name: 'Michael Jackson Pose'},
-              {src: './images/disco-pose.jpg', name: 'Disco Pose'}]
+              {src: './images/disco-pose.jpg', name: 'Disco Pose'},
+              {src: './images/Triangular-Pose.jpg', name: 'Triangular Pose'},
+              {src: './images/chair-yoga-pose.jpg', name: 'Chair Pose'},
+              {src: './images/stand-Pose.jpg', name: 'Standing Pose'},
+              {src: './images/Warrior-pose.jpg', name: 'Warrior Pose'},
+              {src: './images/yoga-tree-pose.jpg', name: 'Tree Pose'}];
+              
 
 
 
