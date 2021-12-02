@@ -44,18 +44,28 @@ table, th, td {
 
 
 }
-.btn1{
+.btn1 {
     height: 50px;
-    width: 50%;
+    width: 40%;
     border: none;
     outline: none;
-    border-radius: 60px;
+    border-radius: 20px;
     font-weight: 600;
     background-color: magenta;
     color: white;
     
 }
-.btn1:hover{
+
+.btn-start {
+    border-radius: 20px;
+    height: 50px;
+    width: 80px;
+    font-weight: 600;
+    background-color: magenta;
+    color: white;
+}
+
+.btn1:hover, .btn-start:hover{
     background-color: blue;
     transition: 0.5s;
 }
@@ -106,4 +116,14 @@ table, th, td {
   @keyframes fade {
     from {opacity: .4}
     to {opacity: 1}
+  }
+
+  canvas {
+      height: 325px;
+      width: 450px;
+      /* background-color: blueviolet; */
+  }
+
+  .detect {
+    width: 80%;
   }

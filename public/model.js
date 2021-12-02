@@ -39,7 +39,7 @@
 			window.requestAnimationFrame(loop);
 		}
 
-        let sensingPaused = false;
+        // let sensingPaused = false;
 	
 		async function predict() {
 			// Prediction #1: run input through posenet
@@ -48,13 +48,13 @@
 			// Prediction 2: run input through teachable machine classification model
 			const prediction = await model.predict(posenetOutput);
 
-            if (sensingPaused) {
-                return;
-            }
-            sensingPaused = true;
+            // if (sensingPaused) {
+            //     return;
+            // }
+            // sensingPaused = true;
 
-            setTimeout(function(){
-                sensingPaused = false;
+            // setTimeout(function(){
+            //     sensingPaused = false;
                 // labelContainer.innerHTML = "Please show me a fruit";
                 for (let i = 0; i < maxPredictions; i++) {
                     const classPrediction =
@@ -63,7 +63,7 @@
 				}
 
 				
-            }, 2000);
+            // }, 2000);
 	
 			
 
