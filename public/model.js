@@ -135,7 +135,7 @@ async function countdown() {
 		var cam =	document.querySelector(".cam");
 		cam.innerHTML = ""
 		displayPose = ""
-		lblPose.innerHTML = ""
+		// lblPose.innerHTML = ""
 		// ctx.clearRect(0,0, canvas.width, canvas.height)
 		// location.reload()
 	}, 50000);
