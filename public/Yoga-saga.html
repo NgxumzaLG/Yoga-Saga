@@ -24,20 +24,18 @@
         
         {{/each}}
 
-		{{#each btnTemp}}
+		<!-- {{#each btnTemp}}
 		<div><button class="btn {{button}} m-3" type="button" onclick="{{event}}">{{name}}</button></div>
 
-		{{/each}}
+		{{/each}} -->
 
-		{{#each camTemp}}
-			<div class="{{class}}">
-				<div ><canvas id="{{id}}"></canvas></div>
-				<div id="label-container"></div>
+		
 
-			</div>
+	</script>
 
-		{{/each}}
-
+	<script type="text/x-template" class="scoreTemplate">
+		<h4 class="my-2 mx-4">Score: <strong>{{theScore}}</strong></h4>
+		
 	</script>
 
 </head>
@@ -57,52 +55,23 @@
 					<div class=" py-2 ">
 						<div class="d-flex m-player">
 							<div><h4 class="my-2 mx-4">Player: <strong>Ishmael</strong></h4></div>
-							<div><h4 class="my-2 mx-4">Score: <strong>0</strong></h4></div>
-							<div class="myButton"></div>
-							<!-- <button class="btn btn-start my-2 mx-4" type="button">Start</button> -->
+							<div class="my-score"></div>
+							<div class="myButton"><button class="btn btn-start m-3" type="button" onclick="poseSlideshow()">Start</button></div>
+							<div><button class="btn btn-start m-3 model-button" type="button"  onclick="init()">Play</button></div>
+							<!-- <button class="btn btn-start my-2 mx-4" type="button" onclick="">Start</button> -->
 						</div>
 
 						<!-- Slideshow container -->
 						<div class="slideshow-container card">
-							<!-- Full-width images with number and caption text -->
-							<!-- <div class="mySlides fade">
-									<img class="img-fluid" src="./images/tree-pose.jpg" name="poses">
-									<label for="poses"><strong>Bending Tree Pose</strong></label>
-								</div>
-						
-								<div class="mySlides fade">
-									<img class="img-fluid" src="./images/michael-jackson-pose.jpg">
-									<label for="poses"><strong>Michael Jackson Pose</strong></label>
-								</div>
+							<div class="detect">
+								<div id="label-box"></div>
+								<div id="label-pose"></div> 
+								<div ><canvas id="canvas"></canvas></div>
+								<div id="label-container"></div>
+				
+							</div>
 							
-								<div class="mySlides fade">
-									<img class="img-fluid" src="./images/disco-pose.jpg">
-									<label for="poses"><strong>Disco Pose</strong></label>
-								</div> -->
-
-							<!-- <div class="mySlides fade">
-									<img class="img-fluid" src="./images/Triangular-Pose.jpg">
-								</div>
-								
-								<div class="mySlides fade">
-									<img class="img-fluid" src="./images/chair-yoga-pose.jpg">
-								</div>
-							
-								<div class="mySlides fade">
-									<img class="img-fluid" src="./images/stand-Pose.jpg">
-								</div>
-
-								<div class="mySlides fade">
-									<img class="img-fluid" src="./images/Warrior-pose.jpg">
-								</div>
-
-								<div class="mySlides fade">
-									<img class="img-fluid" src="./images/yoga-tree-pose.jpg">
-								</div> -->
 						</div>
-
-						<!-- <div><canvas id="canvas" style="max-height: 350px; max-width: 500px;"></canvas></div>
-							<div id="label-container"></div> -->
 					</div>
 
 				</div>
@@ -110,7 +79,7 @@
 		</div>
 	</section>
 
-	<script src="./yoga_sagaFactoryFunction.js"></script>	
+	<script src="./yoga_sagaFactoryFunction.js"></script>
 	<script src="./model.js"></script>
 	<script src="./yoga.js"></script>
 
