@@ -135,9 +135,10 @@ async function countdown() {
 		var cam =	document.querySelector(".cam");
 		cam.innerHTML = ""
 		displayPose = ""
+		// lblPose.innerHTML = ""
 		// ctx.clearRect(0,0, canvas.width, canvas.height)
-		location.reload()
-	}, 5000);
+		// location.reload()
+	}, 50000);
 
 }
 
@@ -145,7 +146,7 @@ async function timerAlert() {
 	setTimeout(function () {
 		labelBox.innerHTML = `<h4><strong>Your Time starts now!</strong></h4>`;
 
-	}, 50000);
+	}, 2000);
 
 	setTimeout(function () {
 		labelBox.innerHTML = '';
