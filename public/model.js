@@ -24,6 +24,7 @@ if (localStorage['Score']) {
 }
 
 let whichPose = yogaPoses.randomPose();
+let displayPose;
 
 myScore.innerHTML = useScoreTemplate({ theScore: score });
 // card.innerHTML = useScoreTemplate({camTemp: poseDetector})
@@ -34,7 +35,7 @@ myScore.innerHTML = useScoreTemplate({ theScore: score });
 
 // the link to your model provided by Teachable Machine export panel
 const URL = "https://teachablemachine.withgoogle.com/models/xM33p1bQt/";
-let model, webcam, ctx, labelContainer, maxPredictions;
+let model, webcam, ctx, labelContainer, maxPredictions, canvas;
 
 async function init() {
 	const modelURL = URL + "model.json";
@@ -55,7 +56,7 @@ async function init() {
 	window.requestAnimationFrame(loop);
 
 	// append/get elements to the DOM
-	const canvas = document.getElementById("canvas");
+	 canvas = document.getElementById("canvas");
 	canvas.width = size; canvas.height = size;
 	ctx = canvas.getContext("2d");
 	labelContainer = document.getElementById("label-container");
@@ -75,7 +76,7 @@ async function loop(timestamp) {
 	window.requestAnimationFrame(loop);
 	await countdown()
 	console.log(whichPose)
-	let displayPose = `<h3 class= "text-primary"><strong>${whichPose}</strong></h3>`;
+	displayPose = `<h3 class= "text-primary"><strong>${whichPose}</strong></h3>`;
 	console.log(displayPose);
 	myScore.innerHTML = useScoreTemplate({ theScore: score });
 	lblPose.innerHTML = displayPose;
@@ -125,12 +126,18 @@ function drawPose(pose) {
 
 async function countdown() {
 
-	setTimeout(function () {
+	setTimeout(async function () {
 		labelBox.innerHTML = '';
 		localStorage.setItem("Score", JSON.stringify(score));
+// 				cument 
+		await webcam.pause();
 
+		var cam =	document.querySelector(".cam");
+		cam.innerHTML = ""
+		displayPose = ""
+		// ctx.clearRect(0,0, canvas.width, canvas.height)
 		location.reload()
-	}, 50000);
+	}, 5000);
 
 }
 
@@ -138,7 +145,7 @@ async function timerAlert() {
 	setTimeout(function () {
 		labelBox.innerHTML = `<h4><strong>Your Time starts now!</strong></h4>`;
 
-	}, 2000);
+	}, 50000);
 
 	setTimeout(function () {
 		labelBox.innerHTML = '';
